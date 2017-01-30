@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        Intent i = new Intent(this, ServicioMusica.class);
+        Intent intent = new Intent(this, ServicioMusica.class);
         switch (v.getId()) {
             case R.id.boton_arrancar:
-                startService(i);
+                startService(intent);
                 break;
             case R.id.boton_detener:
-                stopService(i);
+                stopService(intent);
                 break;
         }
 
